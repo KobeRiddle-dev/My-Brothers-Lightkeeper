@@ -1,6 +1,6 @@
 {
   "$GMProject":"",
-  "%Name":"The Jury",
+  "%Name":"My Brother's Keeper",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -32,7 +32,7 @@
   "MetaData":{
     "IDEVersion":"2024.4.1.152",
   },
-  "name":"The Jury",
+  "name":"My Brother's Keeper",
   "resources":[
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
