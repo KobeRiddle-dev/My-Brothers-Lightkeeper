@@ -36,6 +36,7 @@
   "resources":[
     {"id":{"name":"Player","path":"objects/Player/Player.yy",},},
     {"id":{"name":"Sea","path":"rooms/Sea/Sea.yy",},},
+    {"id":{"name":"InputParser","path":"scripts/InputParser/InputParser.yy",},},
     {"id":{"name":"PlayerTemp","path":"sprites/PlayerTemp/PlayerTemp.yy",},},
     {"id":{"name":"SeaBackgroundTemp","path":"sprites/SeaBackgroundTemp/SeaBackgroundTemp.yy",},},
   ],
