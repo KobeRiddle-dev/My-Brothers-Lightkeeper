@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"InputParser",
+  "%Name":"input_parsing",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"InputParser",
+  "name":"input_parsing",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

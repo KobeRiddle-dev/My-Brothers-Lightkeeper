@@ -2,20 +2,29 @@
 // You can write your code in this editor
 
 
-function update()
+function Update()
 {
-    var horizontal_input = get_horizontal_input();
-    var vertical_input = get_vertical_input();
-    move(horizontal_input, vertical_input);
+    var horizontalInput = GetHorizontalInput();
+    var verticalInput = GetVerticalInput();
+    var interactDown = IsInteractInputDown();
+
+    if (self.boatMode)
+    {
+        with(self.boat)
+		{
+            Boat.Move(horizontalInput, verticalInput);
+            // TODO: make this less ugly and awful -- other refers to the player here and self refers to the boat :|
+            other.x = self.x;
+            other.y = self.y;
+		}
+		
+    }
+    else
+    {
+        Move(horizontalInput, verticalInput);
+    }
 }
 
-function move(horizontal_input, vertical_input)
-{
-    self.hspeed = horizontal_input * self.movement_speed;
-    self.vspeed = vertical_input * self.movement_speed;
-}
 
 
-
-
-update();
+Update();
