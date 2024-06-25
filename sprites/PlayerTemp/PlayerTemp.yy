@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"My Brother's Keeper",
-    "path":"My Brother's Keeper.yyp",
+    "name":"My Brother's Lightkeeper",
+    "path":"My Brother's Lightkeeper.yyp",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

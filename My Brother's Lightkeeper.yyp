@@ -1,6 +1,6 @@
 {
   "$GMProject":"",
-  "%Name":"My Brother's Keeper",
+  "%Name":"My Brother's Lightkeeper",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -32,7 +32,7 @@
   "MetaData":{
     "IDEVersion":"2024.4.1.152",
   },
-  "name":"My Brother's Keeper",
+  "name":"My Brother's Lightkeeper",
   "resources":[
     {"id":{"name":"Boat","path":"objects/Boat/Boat.yy",},},
     {"id":{"name":"Island","path":"objects/Island/Island.yy",},},
