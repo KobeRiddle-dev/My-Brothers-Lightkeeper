@@ -1,12 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"Boat",
+  "%Name":"Storm",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Boat",
+  "name":"Storm",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -26,15 +25,13 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v1","%Name":"sailingSpeed","filters":[],"listItems":[],"multiselect":false,"name":"sailingSpeed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"20","varType":0,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"BoatTemp",
-    "path":"sprites/BoatTemp/BoatTemp.yy",
+    "name":"StormTemp",
+    "path":"sprites/StormTemp/StormTemp.yy",
   },
   "spriteMaskId":null,
   "visible":true,

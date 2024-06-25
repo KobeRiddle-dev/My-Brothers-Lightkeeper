@@ -1,12 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"Boat",
+  "%Name":"MapPiece",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Boat",
+  "name":"MapPiece",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -27,14 +26,15 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"sailingSpeed","filters":[],"listItems":[],"multiselect":false,"name":"sailingSpeed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"20","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"player","filters":[],"listItems":[],"multiselect":false,"name":"player","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"parentMap","filters":[],"listItems":[],"multiselect":false,"name":"parentMap","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"BoatTemp",
-    "path":"sprites/BoatTemp/BoatTemp.yy",
+    "name":"MapPieceTemp",
+    "path":"sprites/MapPieceTemp/MapPieceTemp.yy",
   },
   "spriteMaskId":null,
   "visible":true,

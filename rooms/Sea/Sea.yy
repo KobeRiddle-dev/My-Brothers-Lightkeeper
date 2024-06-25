@@ -8,22 +8,47 @@
   "instanceCreationOrder":[
     {"name":"inst_289E1CED","path":"rooms/Sea/Sea.yy",},
     {"name":"inst_10BA35E5","path":"rooms/Sea/Sea.yy",},
-    {"name":"inst_4B204FD9","path":"rooms/Sea/Sea.yy",},
-    {"name":"inst_561A3CF4","path":"rooms/Sea/Sea.yy",},
-    {"name":"inst_60687DDC","path":"rooms/Sea/Sea.yy",},
+    {"name":"player1","path":"rooms/Sea/Sea.yy",},
+    {"name":"PlayerBoat","path":"rooms/Sea/Sea.yy",},
+    {"name":"inst_6B1F78A4","path":"rooms/Sea/Sea.yy",},
+    {"name":"inst_2DD037E3","path":"rooms/Sea/Sea.yy",},
+    {"name":"inst_531649B3","path":"rooms/Sea/Sea.yy",},
+    {"name":"inst_1CFAE1D","path":"rooms/Sea/Sea.yy",},
+    {"name":"inst_7734703","path":"rooms/Sea/Sea.yy",},
+    {"name":"inst_5EFD819A","path":"rooms/Sea/Sea.yy",},
+    {"name":"inst_6BC9BDD2","path":"rooms/Sea/Sea.yy",},
+    {"name":"inst_20C428A","path":"rooms/Sea/Sea.yy",},
+    {"name":"map1","path":"rooms/Sea/Sea.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances_2","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"","%Name":"inst_4B204FD9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4B204FD9","objectId":{"name":"Player","path":"objects/Player/Player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":139.0,},
-        {"$GMRInstance":"","%Name":"inst_561A3CF4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_561A3CF4","objectId":{"name":"Boat","path":"objects/Boat/Boat.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":1.0,"x":160.0,"y":287.0,},
-        {"$GMRInstance":"","%Name":"inst_60687DDC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_60687DDC","objectId":{"name":"LightHouse","path":"objects/LightHouse/LightHouse.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":2.0,"x":640.0,"y":512.0,},
+        {"$GMRInstance":"","%Name":"player1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"player1","objectId":{"name":"Player","path":"objects/Player/Player.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Player","path":"objects/Player/Player.yy",},"propertyId":{"name":"boat","path":"objects/Player/Player.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"PlayerBoat",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":288.0,"y":352.0,},
+        {"$GMRInstance":"","%Name":"PlayerBoat","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"PlayerBoat","objectId":{"name":"Boat","path":"objects/Boat/Boat.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":1.0,"x":288.0,"y":448.0,},
+        {"$GMRInstance":"","%Name":"inst_531649B3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_531649B3","objectId":{"name":"MapPiece","path":"objects/MapPiece/MapPiece.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"MapPiece","path":"objects/MapPiece/MapPiece.yy",},"propertyId":{"name":"player","path":"objects/MapPiece/MapPiece.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"player1",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1216.0,"y":320.0,},
+        {"$GMRInstance":"","%Name":"inst_1CFAE1D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1CFAE1D","objectId":{"name":"MapPiece","path":"objects/MapPiece/MapPiece.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1120.0,"y":736.0,},
+        {"$GMRInstance":"","%Name":"inst_7734703","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7734703","objectId":{"name":"MapPiece","path":"objects/MapPiece/MapPiece.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"MapPiece","path":"objects/MapPiece/MapPiece.yy",},"propertyId":{"name":"parentMap","path":"objects/MapPiece/MapPiece.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"map1",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"MapPiece","path":"objects/MapPiece/MapPiece.yy",},"propertyId":{"name":"player","path":"objects/MapPiece/MapPiece.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"player1",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1024.0,"y":352.0,},
+        {"$GMRInstance":"","%Name":"map1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"map1","objectId":{"name":"Map","path":"objects/Map/Map.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-128.0,"y":-96.0,},
       ],"layers":[],"name":"Instances_2","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRInstanceLayer":"","%Name":"Islands","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"","%Name":"inst_289E1CED","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_289E1CED","objectId":{"name":"Island","path":"objects/Island/Island.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":10.0,"scaleY":10.0,"x":384.0,"y":256.0,},
-        {"$GMRInstance":"","%Name":"inst_10BA35E5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_10BA35E5","objectId":{"name":"Island","path":"objects/Island/Island.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":10.0,"scaleY":10.0,"x":-160.0,"y":-160.0,},
+    {"$GMRInstanceLayer":"","%Name":"Weather","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"","%Name":"inst_5EFD819A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5EFD819A","objectId":{"name":"Storm","path":"objects/Storm/Storm.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":10.0,"scaleY":10.0,"x":448.0,"y":320.0,},
+        {"$GMRInstance":"","%Name":"inst_20C428A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_20C428A","objectId":{"name":"Fog","path":"objects/Fog/Fog.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":40.0,"scaleY":33.0,"x":-544.0,"y":-512.0,},
+      ],"layers":[],"name":"Weather","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRInstanceLayer":"","%Name":"Islands","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"","%Name":"inst_289E1CED","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_289E1CED","objectId":{"name":"Island","path":"objects/Island/Island.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":10.0,"scaleY":10.0,"x":448.0,"y":320.0,},
+        {"$GMRInstance":"","%Name":"inst_10BA35E5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_10BA35E5","objectId":{"name":"Island","path":"objects/Island/Island.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":7.0,"scaleY":7.0,"x":96.0,"y":160.0,},
+        {"$GMRInstance":"","%Name":"inst_6B1F78A4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6B1F78A4","objectId":{"name":"Island","path":"objects/Island/Island.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":10.0,"scaleY":10.0,"x":800.0,"y":32.0,},
+        {"$GMRInstance":"","%Name":"inst_2DD037E3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2DD037E3","objectId":{"name":"Island","path":"objects/Island/Island.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":5.0,"scaleY":5.0,"x":992.0,"y":608.0,},
+        {"$GMRInstance":"","%Name":"inst_6BC9BDD2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6BC9BDD2","objectId":{"name":"LightHouse","path":"objects/LightHouse/LightHouse.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":768.0,"y":608.0,},
       ],"layers":[],"name":"Islands","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"SeaBackgroundTemp","path":"sprites/SeaBackgroundTemp/SeaBackgroundTemp.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":true,"x":0,"y":0,},
+    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"SeaBackgroundTemp","path":"sprites/SeaBackgroundTemp/SeaBackgroundTemp.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":true,"x":0,"y":0,},
   ],
   "name":"Sea",
   "parent":{
@@ -41,10 +66,10 @@
   "resourceType":"GMRoom",
   "resourceVersion":"2.0",
   "roomSettings":{
-    "Height":768,
+    "Height":1080,
     "inheritRoomSettings":false,
     "persistent":true,
-    "Width":1366,
+    "Width":1920,
   },
   "sequenceId":null,
   "views":[
