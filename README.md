@@ -5,8 +5,6 @@ The Jury, a game created for EAE-3720 Alternative Game Development Summer 2024 a
 Authors:
 
 - Brennan
-- Max
+- Linkun Shen
 - Kobe Riddle
 - Timothy Quin Richards
-
-Dumb change for the sake of demonstration.
