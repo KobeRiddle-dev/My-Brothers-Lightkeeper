@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Island",
+  "%Name":"SafePathNode",
   "eventList":[],
   "managed":true,
-  "name":"Island",
+  "name":"SafePathNode",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -23,16 +23,11 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v1","%Name":"region","filters":[],"listItems":[],"multiselect":false,"name":"region","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"IslandTemp",
-    "path":"sprites/IslandTemp/IslandTemp.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

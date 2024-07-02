@@ -7,6 +7,14 @@
 /// @param {Real} verticalInput Between 0 and 1
 Move = function(horizontalInput, verticalInput)
 {
-    self.x += horizontalInput * self.sailingSpeed;
-    self.y += verticalInput * self.sailingSpeed;
+	var deltaX = horizontalInput * self.sailingSpeed;
+	var deltaY = verticalInput * self.sailingSpeed;
+	
+	var willBeInWater = !place_meeting(self.x + deltaX, self.y + deltaY, Island);
+	if (willBeInWater)
+	{
+		self.x += deltaX;
+		self.y += deltaY;
+	}
+
 }
