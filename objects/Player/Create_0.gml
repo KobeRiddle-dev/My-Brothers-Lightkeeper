@@ -36,7 +36,6 @@ Update = function()
 
     if (boatMode)
 	{
-		// TODO: Move the boat's movement call into the boat's update function
         boat.Move(horizontalInput, verticalInput);
 		x = boat.x;
 		y = boat.y;

@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"Island1",
+  "%Name":"IslandR1I3",
   "eventList":[],
   "managed":true,
-  "name":"Island1",
+  "name":"IslandR1I3",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Region1",
+    "path":"folders/Objects/Region1.yy",
   },
-  "parentObjectId":{
-    "name":"Island",
-    "path":"objects/Island/Island.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"IslandTemp",
+    "path":"sprites/IslandTemp/IslandTemp.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
