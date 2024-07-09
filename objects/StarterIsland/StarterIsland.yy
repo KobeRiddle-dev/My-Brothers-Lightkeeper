@@ -1,15 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"Camera",
+  "%Name":"StarterIsland",
   "eventList":[],
   "managed":true,
-  "name":"Camera",
+  "name":"StarterIsland",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"Island",
+    "path":"objects/Island/Island.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -27,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"IslandTemp",
+    "path":"sprites/IslandTemp/IslandTemp.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

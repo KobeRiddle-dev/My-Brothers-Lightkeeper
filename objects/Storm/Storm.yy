@@ -8,8 +8,8 @@
   "name":"Storm",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Weather",
+    "path":"folders/Objects/Weather.yy",
   },
   "parentObjectId":null,
   "persistent":false,

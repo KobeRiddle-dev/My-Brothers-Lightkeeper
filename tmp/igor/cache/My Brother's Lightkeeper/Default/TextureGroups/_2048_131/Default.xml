@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureGroup>
+  <texture scale="1" mipsToGenerate="0" texwidth="2048" texheight="2048">default_0.bz2</texture>
+  <texture scale="1" mipsToGenerate="0" texwidth="1024" texheight="1024">default_1.bz2</texture>
+  <tpe x="4" y="4" tpage="default_0.bz2">TileSet1_output_tileset.tpe</tpe>
+  <tpe x="2" y="0" tpage="default_1.bz2">IslandTemp_0855a5c5-88dd-4e28-ae91-fd9fb377f136.tpe</tpe>
+  <tpe x="2" y="1982" tpage="default_0.bz2">BoatTemp_39a81cde-312d-47c2-aa9b-4f8b44dceeb8.tpe</tpe>
+  <tpe x="70" y="1982" tpage="default_0.bz2">FogTemp_cedd4cb6-d98a-4a16-bc67-e6a3d408f46d.tpe</tpe>
+  <tpe x="138" y="1982" tpage="default_0.bz2">LightHouseTemp_b0fffda2-f8b9-4643-b316-6b5715b26edd.tpe</tpe>
+  <tpe x="206" y="1982" tpage="default_0.bz2">PlayerTemp_c5627f1e-16a3-4342-8d4b-2a8a77adf02f.tpe</tpe>
+  <tpe x="274" y="1982" tpage="default_0.bz2">SeaBackgroundTemp_aa1dfea2-c32e-48fa-92b3-b9c9e882ac34.tpe</tpe>
+  <tpe x="342" y="1982" tpage="default_0.bz2">StormTemp_a0bb398d-d858-4c32-b8c9-1c3f211e1032.tpe</tpe>
+  <tpe x="409" y="1982" tpage="default_0.bz2">MapPieceTemp_891bb684-2325-44aa-ada8-e0f87653f3eb.tpe</tpe>
+  <tpe x="342" y="2044" tpage="default_0.bz2">Sprite11_86f1d7b5-f4c0-4f87-9a38-b6e7afd053ed.tpe</tpe>
+  <tpe x="342" y="2044" tpage="default_0.bz2">Sprite7_6b7922b0-304f-4ff8-9d24-4d23f454864b.tpe</tpe>
+</TextureGroup>
