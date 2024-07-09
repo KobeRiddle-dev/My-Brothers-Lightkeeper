@@ -4,17 +4,19 @@
 /// @instancevar {Real} regionNumber
 /// @instancevar {Real} numberSideIslands
 /// @instancevar {Id.Layer} islandLayer
+/// @instancevar {Id.Layer} weatherLayer
 /// @instancevar {Real} islandRadiusMeters 
 /// @instancevar {Id.Instance.Map} map
 /// @instancevar {Id.Instance.LightHouse} lightHouse
-/// @instancevar {Asset.GMObject.Island} lightHouseIsland
+/// @instancevar {Id.Instance.LightHouseIsland} lightHouseIsland
+/// @instancevar {Asset.GMObject.Island} lightHouseIslandType
 /// @instancevar {Any} foo 
 
-/// @type{Array<Real>}
+/// @type{Array<Id.Instance.Island>}
 self.islands = [];
 
 /// @type{Real}
-self.radius = 0;
+self.radiusMeters = 0;
 
 /// @param {Real} xOffsetPixels
 /// @param {Real} yOffsetPixels
@@ -33,8 +35,33 @@ CreateIsland = function(xOffsetPixels, yOffsetPixels, islandType)
 /// @returns {Id.Instance.Island} 
 CreateLightHouseIsland = function()
 {
-	show_debug_message("creating lightHouse Island at x: " + string(self.x) + ", y: " + string(self.y) + ", type: " + object_get_name(self.lightHouseIsland));
-	return instance_create_layer(self.x, self.y, self.islandLayer, self.lightHouseIsland);
+	show_debug_message("creating lightHouse Island at x: " + string(self.x) + ", y: " + string(self.y) + ", type: " + object_get_name(self.lightHouseIslandType));
+	return instance_create_layer(self.x, self.y, self.islandLayer, self.lightHouseIslandType);
+}
+
+/// @param {Id.Instance.Storm} storm 
+CreateLightHouse = function(storm)
+{
+	var creationX = self.x;
+	var creationy = self.y;
+
+	show_debug_message("creating lightHouse at x: " + string(creationX) + ", y: " + string(creationy) + ", type: " + object_get_name(LightHouse));
+	return instance_create_layer(creationX, creationy, "Objects", LightHouse, {region: self.id, storm: storm});
+}
+
+CreateStorm = function()
+{
+	return instance_create_layer(self.x, self.y, self.weatherLayer, Storm, {region: self.id, radiusMeters: self.islandRadiusMeters * 2});
+}
+
+CreateFog = function()
+{
+	return instance_create_layer(self.x, self.y, self.weatherLayer, Fog, {region: self.id});
+}
+
+CreateMap = function()
+{
+	return instance_create_layer(self.x, self.y, "Objects", Map, {region: self.id, numberFragments: self.regionNumber})
 }
 
 CreateIslands = function()
@@ -56,12 +83,12 @@ CreateIslands = function()
 		var yFactor = yFactors[factorIndex];
 		array_delete(yFactors, factorIndex, 1);
 		
-		var randomOffsetMetersBound = self.islandRadiusMeters / 16;
-		var randomOffsetMeters = irandom_range(-randomOffsetMetersBound, randomOffsetMetersBound);
+		var randomOffsetMetersBound = self.islandRadiusMeters / 2;
+		var randomOffsetXMeters = irandom_range(-randomOffsetMetersBound, randomOffsetMetersBound);
+		var randomOffsetYMeters = irandom_range(-randomOffsetMetersBound, randomOffsetMetersBound);
 
-		var xOffsetPixels = MetersToPixels((self.islandRadiusMeters * 2 * xFactors[i]) + randomOffsetMeters);
-		var yOffsetPixels = MetersToPixels((self.islandRadiusMeters * 2 * yFactors[i]) + randomOffsetMeters);
-		
+		var xOffsetPixels = MetersToPixels((self.islandRadiusMeters * 2 * xFactors[i]) + randomOffsetXMeters);
+		var yOffsetPixels = MetersToPixels((self.islandRadiusMeters * 2 * yFactors[i]) + randomOffsetYMeters);
 
 		// Get Island Name
 		var islandName = "Island" + "R" + string(self.regionNumber) + "I" + string(i);
@@ -75,6 +102,9 @@ CreateIslands = function()
 	}
 }
 
-self.radius = MetersToPixels(self.islandRadiusMeters * 4);
+self.radiusMeters = self.islandRadiusMeters * 8;
+self.fog = self.CreateFog();
 self.CreateLightHouseIsland();
+self.lightHouse = CreateLightHouse(self.CreateStorm());
 self.CreateIslands();
+self.map = self.CreateMap();

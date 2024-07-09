@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 /// @instancevar {Real} movementSpeed
+/// @instancevar {Id.Instance.Boat} boat 
 /// @instancevar {Any} foo 
 
 
