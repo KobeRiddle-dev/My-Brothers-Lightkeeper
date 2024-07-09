@@ -1,6 +1,10 @@
 /// @description Creates the player
 // You can write your code in this editor
 
+/// @instancevar {Real} movementSpeed
+/// @instancevar {Any} foo 
+
+
 /// @function
 /// @param {Real} microSeconds
 /// @return {Real} seconds
@@ -17,7 +21,7 @@ function convertMicroSecondsToSeconds(microSeconds)
 Move = function(horizontalInput, verticalInput)
 {
 	
-	show_debug_message("moving player. movementSpeed: " + string(self.movementSpeed));
+	// show_debug_message("moving player. movementSpeed: " + string(self.movementSpeed));
 	var deltaX = horizontalInput * self.movementSpeed * convertMicroSecondsToSeconds(delta_time);
 	var deltaY = verticalInput * self.movementSpeed * convertMicroSecondsToSeconds(delta_time);
 	

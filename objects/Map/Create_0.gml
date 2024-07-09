@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+/// @instancevar {Real} numberFragments; 
+
 self.fragments = [];
 
 AddFragment = function(fragment)

@@ -1,15 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"IslandR1I3",
+  "%Name":"IslandR1I0",
   "eventList":[],
   "managed":true,
-  "name":"IslandR1I3",
+  "name":"IslandR1I0",
   "overriddenProperties":[],
   "parent":{
     "name":"Region1",
     "path":"folders/Objects/Region1.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"Island",
+    "path":"objects/Island/Island.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

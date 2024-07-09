@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+/// @instancevar {Real} sailingSpeed;
+/// @instancevar {Any} foo 
 
 /// @function
 /// @param {Real} horizontalInput Between 0 and 1

@@ -9,7 +9,10 @@
     "name":"Region1",
     "path":"folders/Objects/Region1.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"Island",
+    "path":"objects/Island/Island.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

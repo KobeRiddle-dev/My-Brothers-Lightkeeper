@@ -2,19 +2,13 @@
 // You can write your code in this editor
 
 /// @instancevar {Real} regionNumber
-self.regionNumber;
 /// @instancevar {Real} numberSideIslands
-self.numberSideIslands;
 /// @instancevar {Id.Layer} islandLayer
-self.islandLayer;
 /// @instancevar {Real} islandRadiusMeters 
-self.islandRadiusMeters;
 /// @instancevar {Id.Instance.Map} map
-self.map;
 /// @instancevar {Id.Instance.LightHouse} lightHouse
-self.lightHouse;
 /// @instancevar {Asset.GMObject.Island} lightHouseIsland
-self.lightHouseIsland;
+/// @instancevar {Any} foo 
 
 /// @type{Array<Real>}
 self.islands = [];
@@ -25,41 +19,62 @@ self.radius = 0;
 /// @param {Real} xOffsetPixels
 /// @param {Real} yOffsetPixels
 /// @param {Asset.GMObject.Island} islandType
+/// @returns {Id.Instance.Island} 
 CreateIsland = function(xOffsetPixels, yOffsetPixels, islandType)
 {
-	return instance_create_layer(self.x + xOffsetPixels, self.y + yOffsetPixels, self.islandLayer, islandType)
+	var creationX = self.x + xOffsetPixels;
+	var creationY = self.y + yOffsetPixels;
+
+	show_debug_message("creating island at x: " + string(creationX) + ", y: " + string(creationY) + ", type: " + object_get_name(islandType));
+	return instance_create_layer(creationX, creationY, self.islandLayer, islandType)
 	
 }
 
-CalculateRadius = function()
-{
-	return MetersToPixels(self.numberSideIslands * 64);
-}
-
+/// @returns {Id.Instance.Island} 
 CreateLightHouseIsland = function()
 {
+	show_debug_message("creating lightHouse Island at x: " + string(self.x) + ", y: " + string(self.y) + ", type: " + object_get_name(self.lightHouseIsland));
 	return instance_create_layer(self.x, self.y, self.islandLayer, self.lightHouseIsland);
 }
 
 CreateIslands = function()
 {
-	for (var i = 1; i <= self.numberSideIslands; i++)
-	{
-		var randomOffsetMeters = self.islandRadiusMeters / 16;
+	// reset the seed. Gamemaker is weird so you have to do that manually.
+	randomize();
+	
+	var xFactors = [-1, 0, 1, -1, 1, -1, 0, 1];
+	var yFactors = [-1, -1, -1, 0, 0, 1, 1, 1]
 
-		var xOffsetPixels = self.islandRadiusMeters + islandRadiusMeters;
-		var yOffsetPixels = 10 * i;
+	for (var i = 0; i < self.numberSideIslands; i++)
+	{
+		// Get island position
+		var factorIndex = irandom_range(0, array_length(xFactors) - 1);
 		
+		var xFactor = xFactors[factorIndex];
+		array_delete(xFactors, factorIndex, 1);
+		
+		var yFactor = yFactors[factorIndex];
+		array_delete(yFactors, factorIndex, 1);
+		
+		var randomOffsetMetersBound = self.islandRadiusMeters / 16;
+		var randomOffsetMeters = irandom_range(-randomOffsetMetersBound, randomOffsetMetersBound);
+
+		var xOffsetPixels = MetersToPixels((self.islandRadiusMeters * 2 * xFactors[i]) + randomOffsetMeters);
+		var yOffsetPixels = MetersToPixels((self.islandRadiusMeters * 2 * yFactors[i]) + randomOffsetMeters);
+		
+
+		// Get Island Name
 		var islandName = "Island" + "R" + string(self.regionNumber) + "I" + string(i);
-		show_debug_message("islandName: " + islandName);
+		// show_debug_message("islandName: " + islandName);
 		var islandType = asset_get_index(islandName);
-		show_debug_message(object_get_name(islandType));
+		// show_debug_message(object_get_name(islandType));
 		
+		// Make Island
 		var newIsland = CreateIsland(xOffsetPixels, yOffsetPixels, islandType);
-		array_push(self.islands, newIsland);	
+		array_push(self.islands, newIsland);
 	}
 }
 
-self.radius = self.CalculateRadius();
+self.radius = MetersToPixels(self.islandRadiusMeters * 4);
 self.CreateLightHouseIsland();
 self.CreateIslands();
