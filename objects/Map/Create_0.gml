@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 /// @instancevar {Real} numberFragments; 
-/// @instancevar {Id.Instance.Region} region 
+/// @instancevar {Id.Instance.Region} region; 
 
 self.fragments = [];
 

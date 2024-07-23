@@ -37,6 +37,11 @@ Move = function(horizontalInput, verticalInput)
 
 Update = function()
 {
+	if (global.dialogMode)
+	{
+		return;
+	}
+
     var horizontalInput = GetHorizontalInput();
     var verticalInput = GetVerticalInput();
 
@@ -54,6 +59,7 @@ Update = function()
 
 
 self.maps = [];
+global.dialogMode = false;
 
 // TODO: move to somewhere other than the initialization of the player
 gamepad_set_axis_deadzone(global.gamepadSlot, global.gamepadDeadzone);
