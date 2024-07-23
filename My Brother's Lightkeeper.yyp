@@ -53,7 +53,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.1.152",
+    "IDEVersion":"2024.6.2.162",
   },
   "name":"My Brother's Lightkeeper",
   "resources":[
@@ -77,6 +77,10 @@
     {"id":{"name":"Sea","path":"rooms/Sea/Sea.yy",},},
     {"id":{"name":"input_parsing","path":"scripts/input_parsing/input_parsing.yy",},},
     {"id":{"name":"Units","path":"scripts/Units/Units.yy",},},
+    {"id":{"name":"MBL_Soundtrack","path":"sounds/MBL_Soundtrack/MBL_Soundtrack.yy",},},
+    {"id":{"name":"snd_FogLifted","path":"sounds/snd_FogLifted/snd_FogLifted.yy",},},
+    {"id":{"name":"snd_LighthouseLit","path":"sounds/snd_LighthouseLit/snd_LighthouseLit.yy",},},
+    {"id":{"name":"snd_MapPickup","path":"sounds/snd_MapPickup/snd_MapPickup.yy",},},
     {"id":{"name":"BoatTemp","path":"sprites/BoatTemp/BoatTemp.yy",},},
     {"id":{"name":"DialogBoxSprite","path":"sprites/DialogBoxSprite/DialogBoxSprite.yy",},},
     {"id":{"name":"FogTemp","path":"sprites/FogTemp/FogTemp.yy",},},
