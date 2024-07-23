@@ -82,6 +82,7 @@
     {"id":{"name":"snd_FogLifted","path":"sounds/snd_FogLifted/snd_FogLifted.yy",},},
     {"id":{"name":"snd_LighthouseLit","path":"sounds/snd_LighthouseLit/snd_LighthouseLit.yy",},},
     {"id":{"name":"snd_MapPickup","path":"sounds/snd_MapPickup/snd_MapPickup.yy",},},
+    {"id":{"name":"snd_Talking","path":"sounds/snd_Talking/snd_Talking.yy",},},
     {"id":{"name":"BoatTemp","path":"sprites/BoatTemp/BoatTemp.yy",},},
     {"id":{"name":"DialogBoxSprite","path":"sprites/DialogBoxSprite/DialogBoxSprite.yy",},},
     {"id":{"name":"FogTemp","path":"sprites/FogTemp/FogTemp.yy",},},
