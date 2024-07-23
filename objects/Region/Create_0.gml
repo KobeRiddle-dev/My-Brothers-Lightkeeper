@@ -46,7 +46,7 @@ CreateLightHouse = function(storm)
 	var creationy = self.y;
 
 	show_debug_message("creating lightHouse at x: " + string(creationX) + ", y: " + string(creationy) + ", type: " + object_get_name(LightHouse));
-	return instance_create_layer(creationX, creationy, "Objects", LightHouse, {region: self.id, storm: storm});
+	return instance_create_layer(creationX, creationy, "Boat", LightHouse, {region: self.id, storm: storm});
 }
 
 CreateStorm = function()
@@ -102,9 +102,25 @@ CreateIslands = function()
 	}
 }
 
+GetRandomIsland = function()
+{
+	var randomIndex = irandom_range(0, array_length(self.islands) - 1);
+	return self.islands[randomIndex];
+}
+
+CreateNpc = function()
+{
+	var randomIsland = GetRandomIsland();
+	var npcX = randomIsland.GetRandomXWithin();
+	var npcY = randomIsland.GetRandomYWithin();
+
+	instance_create_layer(npcX, npcY, "NPCs", NPC);
+}
+
 self.radiusMeters = self.islandRadiusMeters * 8;
 self.fog = self.CreateFog();
 self.CreateLightHouseIsland();
 self.lightHouse = CreateLightHouse(self.CreateStorm());
 self.CreateIslands();
 self.map = self.CreateMap();
+self.CreateNpc();

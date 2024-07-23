@@ -8,6 +8,7 @@
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"LightHouse","path":"objects/LightHouse/LightHouse.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"Boat","path":"objects/Boat/Boat.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"MapPiece","path":"objects/MapPiece/MapPiece.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"NPC","path":"objects/NPC/NPC.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"Player",
@@ -31,7 +32,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"movementSpeed","filters":[],"listItems":[],"multiselect":false,"name":"movementSpeed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"100","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"movementSpeed","filters":[],"listItems":[],"multiselect":false,"name":"movementSpeed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"4","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"boatMode","filters":[],"listItems":[],"multiselect":false,"name":"boatMode","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
     {"$GMObjectProperty":"v1","%Name":"boat","filters":[],"listItems":[],"multiselect":false,"name":"boat","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
   ],

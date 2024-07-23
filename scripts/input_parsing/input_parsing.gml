@@ -1,11 +1,12 @@
 /// A Script for parsing input
 
-global.upKey = ord("w");
-global.downKey = ord("s");
-global.leftKey = ord("a");
-global.rightKey = ord("d");
+global.upKey = ord("W");
+global.downKey = ord("S");
+global.leftKey = ord("A");
+global.rightKey = ord("D");
 
-global.interactKey = ord("f");
+global.interactKey = ord("F");
+global.backKey = ord("X");
 
 global.gamepadSlot = 0;
 global.gamepadDeadzone = 0.1;
@@ -64,9 +65,9 @@ function GetHorizontalInput()
         horizontalInput -= 1;
     }
 
-    var gamepadHorizontal = gamepad_axis_value(global.gamepadSlot, global.gamepadHorizontalAxis);
-    if (gamepadHorizontal != 0)
-        horizontalInput = gamepadHorizontal;
+    // var gamepadHorizontal = gamepad_axis_value(global.gamepadSlot, global.gamepadHorizontalAxis);
+    // if (gamepadHorizontal != 0)
+    //     horizontalInput = gamepadHorizontal;
 
     // show_debug_message("horizontal input: " + string(horizontalInput));
 
@@ -75,10 +76,15 @@ function GetHorizontalInput()
 
 function IsInteractInputDown()
 {
-    var interactInputDown = keyboard_check(global.interactKey) 
-    || gamepad_button_check(global.gamepadSlot, global.gamepadInteractButton);
+    var interactInputDown = keyboard_check_released(global.interactKey) 
+    || gamepad_button_check_released(global.gamepadSlot, global.gamepadInteractButton);
 
     // show_debug_message("interact input down: " + string(interactInputDown))
 
     return interactInputDown;
+}
+
+function IsBackButtonDown()
+{
+    var backInputDown = keyboard_check_released(global.backKey) || gamepad_button_check_released(global.gamepadSlot, global.gamepadBackButton);
 }

@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"LightHouseTemp",
-    "path":"sprites/LightHouseTemp/LightHouseTemp.yy",
+    "name":"LightHouseDark",
+    "path":"sprites/LightHouseDark/LightHouseDark.yy",
   },
   "spriteMaskId":null,
   "visible":true,

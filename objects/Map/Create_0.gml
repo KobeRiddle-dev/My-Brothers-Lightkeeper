@@ -30,11 +30,14 @@ DisperseFragments = function()
 
 DisperseFragment = function()
 {
-	var randomIndex = irandom_range(0, array_length(self.region.islands) - 1);
-	var randomIsland = self.region.islands[randomIndex];
+	var randomIsland = self.region.GetRandomIsland();
+
+	var fragmentX = randomIsland.GetRandomXWithin();
+	var fragmentY = randomIsland.GetRandomYWithin();
 	
-	show_debug_message("creating fragment at x:" + string(randomIsland.x) + ", y: " + string(randomIsland.y));
-	instance_create_layer(randomIsland.x, randomIsland.y, "Objects", MapPiece, {parentMap: self.id});
+	show_debug_message("creating fragment at x:" + string(fragmentX) + ", y: " + string(fragmentY));
+
+	instance_create_layer(fragmentX, fragmentY, "Objects", MapPiece, {parentMap: self.id});
 }
 
 DisperseFragments();

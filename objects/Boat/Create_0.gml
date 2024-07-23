@@ -13,7 +13,9 @@ Move = function(horizontalInput, verticalInput)
 	var deltaY = verticalInput * self.sailingSpeed;
 	
 	var willBeInWater = !place_meeting(self.x + deltaX, self.y + deltaY, Island);
-	if (willBeInWater)
+	var willCollideWithSolidObject = place_meeting(self.x + deltaX, self.y + deltaY, global.solidObjects);
+
+	if (willBeInWater && !willCollideWithSolidObject)
 	{
 		self.x += deltaX;
 		self.y += deltaY;

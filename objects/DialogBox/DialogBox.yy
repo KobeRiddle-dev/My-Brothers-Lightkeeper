@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"IslandR1I2",
+  "%Name":"DialogBox",
   "eventList":[],
   "managed":true,
-  "name":"IslandR1I2",
+  "name":"DialogBox",
   "overriddenProperties":[],
   "parent":{
-    "name":"Region1",
-    "path":"folders/Objects/Region1.yy",
+    "name":"NPCs",
+    "path":"folders/Objects/NPCs.yy",
   },
-  "parentObjectId":{
-    "name":"Island",
-    "path":"objects/Island/Island.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"Island0LowTide",
-    "path":"sprites/Island0LowTide/Island0LowTide.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

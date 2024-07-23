@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"MapPieceTemp",
-    "path":"sprites/MapPieceTemp/MapPieceTemp.yy",
+    "name":"MapPieceSprite",
+    "path":"sprites/MapPieceSprite/MapPieceSprite.yy",
   },
   "spriteMaskId":null,
   "visible":true,

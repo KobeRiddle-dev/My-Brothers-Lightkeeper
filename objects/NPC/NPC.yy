@@ -1,18 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"IslandR1I2",
-  "eventList":[],
+  "%Name":"NPC",
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"IslandR1I2",
+  "name":"NPC",
   "overriddenProperties":[],
   "parent":{
-    "name":"Region1",
-    "path":"folders/Objects/Region1.yy",
+    "name":"NPCs",
+    "path":"folders/Objects/NPCs.yy",
   },
-  "parentObjectId":{
-    "name":"Island",
-    "path":"objects/Island/Island.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Island0LowTide",
-    "path":"sprites/Island0LowTide/Island0LowTide.yy",
+    "name":"Sprite14",
+    "path":"sprites/Sprite14/Sprite14.yy",
   },
   "spriteMaskId":null,
   "visible":true,

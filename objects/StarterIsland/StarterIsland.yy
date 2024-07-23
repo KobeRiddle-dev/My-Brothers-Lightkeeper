@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"IslandTemp",
-    "path":"sprites/IslandTemp/IslandTemp.yy",
+    "name":"StarterIslandSprite",
+    "path":"sprites/StarterIslandSprite/StarterIslandSprite.yy",
   },
   "spriteMaskId":null,
   "visible":true,
