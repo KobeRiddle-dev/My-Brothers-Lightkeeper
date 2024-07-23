@@ -50,7 +50,8 @@ EndDialog = function()
 DrawPhrase = function(phraseIndex)
 {
     show_debug_message("Drawing text: " + self.phrases[phraseIndex]);
-    draw_text(self.x, self.y, self.phrases[phraseIndex]);
+    draw_set_font(DialogFont);
+    draw_text_ext(self.x, self.y, self.phrases[phraseIndex], self.sprite_width - 10);
 }
 
 /// @instancevar {Array<String>} phrases;

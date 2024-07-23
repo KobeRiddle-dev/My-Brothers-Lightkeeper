@@ -57,6 +57,7 @@
   },
   "name":"My Brother's Lightkeeper",
   "resources":[
+    {"id":{"name":"DialogFont","path":"fonts/DialogFont/DialogFont.yy",},},
     {"id":{"name":"Boat","path":"objects/Boat/Boat.yy",},},
     {"id":{"name":"DialogBox","path":"objects/DialogBox/DialogBox.yy",},},
     {"id":{"name":"Fog","path":"objects/Fog/Fog.yy",},},
