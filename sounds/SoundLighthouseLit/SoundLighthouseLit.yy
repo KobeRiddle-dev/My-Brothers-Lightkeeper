@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_Talking",
+  "%Name":"SoundLighthouseLit",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.875011,
-  "name":"snd_Talking",
+  "duration":1.375011,
+  "name":"SoundLighthouseLit",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_Talking.wav",
+  "soundFile":"SoundLighthouseLit.wav",
   "type":0,
   "volume":1.0,
 }

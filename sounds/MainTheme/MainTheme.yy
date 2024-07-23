@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"MBL_Soundtrack",
+  "%Name":"MainTheme",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,7 +10,7 @@
   "compression":0,
   "conversionMode":0,
   "duration":258.46155,
-  "name":"MBL_Soundtrack",
+  "name":"MainTheme",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"MBL_Soundtrack.wav",
+  "soundFile":"MainTheme.wav",
   "type":1,
   "volume":0.33,
 }

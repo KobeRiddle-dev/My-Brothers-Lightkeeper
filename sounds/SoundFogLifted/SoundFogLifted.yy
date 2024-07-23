@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_MapPickup",
+  "%Name":"SoundFogLifted",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.125011,
-  "name":"snd_MapPickup",
+  "duration":1.265646,
+  "name":"SoundFogLifted",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_MapPickup.wav",
+  "soundFile":"SoundFogLifted.wav",
   "type":0,
   "volume":1.0,
 }
