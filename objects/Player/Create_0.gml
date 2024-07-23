@@ -7,16 +7,6 @@
 
 
 /// @function
-/// @param {Real} microSeconds
-/// @return {Real} seconds
-/// @description Converts
-function convertMicroSecondsToSeconds(microSeconds)
-{
-	return microSeconds / 1_000_000;
-}
-
-
-/// @function
 /// @param {Real} horizontalInput Between 0 and 1
 /// @param {Real} verticalInput Between 0 and 1
 Move = function(horizontalInput, verticalInput)
@@ -37,6 +27,9 @@ Move = function(horizontalInput, verticalInput)
 
 Update = function()
 {
+    global.timeSinceLastInput += convertMicroSecondsToSeconds(delta_time);
+	// show_debug_message("time since last input: " + string(global.timeSinceLastInput));
+
 	if (global.dialogMode)
 	{
 		return;
@@ -59,10 +52,3 @@ Update = function()
 
 
 self.maps = [];
-global.dialogMode = false;
-
-// TODO: move to somewhere other than the initialization of the player
-gamepad_set_axis_deadzone(global.gamepadSlot, global.gamepadDeadzone);
-
-// TODO: You can't add lighthouse because you need to interact with it -- fix?
-global.solidObjects = [Storm, Fog];
