@@ -12,3 +12,12 @@ function PixelsToMeters(pixels)
 {
 	return pixels / global.pixelsToMeter;
 }
+
+/// @function
+/// @param {Real} microSeconds
+/// @return {Real} seconds
+/// @description Converts
+function convertMicroSecondsToSeconds(microSeconds)
+{
+	return microSeconds / 1_000_000;
+}

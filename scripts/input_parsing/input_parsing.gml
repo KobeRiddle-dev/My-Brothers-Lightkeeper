@@ -15,6 +15,7 @@ global.gamepadHorizontalAxis = gp_axislh;
 global.gamepadVerticalAxis = gp_axislv;
 
 global.gamepadInteractButton = gp_face3;
+global.gamepadBackButton = gp_face2;
 
 /// @function
 /// @description Gets the vertical input
@@ -76,15 +77,29 @@ function GetHorizontalInput()
 
 function IsInteractInputDown()
 {
-    var interactInputDown = keyboard_check_released(global.interactKey) 
-    || gamepad_button_check_released(global.gamepadSlot, global.gamepadInteractButton);
+    var interactInputDown = global.timeSinceLastInput >= global.inputCoolDownSeconds && (keyboard_check(global.interactKey) 
+    || gamepad_button_check(global.gamepadSlot, global.gamepadInteractButton));
 
     // show_debug_message("interact input down: " + string(interactInputDown))
-
+	
+	if (interactInputDown)
+	{
+		global.timeSinceLastInput = 0;
+	}
     return interactInputDown;
 }
 
-function IsBackButtonDown()
+global.inputCoolDownSeconds = 0.5;
+global.timeSinceLastInput = 0;
+
+function IsBackInputDown()
 {
-    var backInputDown = keyboard_check_released(global.backKey) || gamepad_button_check_released(global.gamepadSlot, global.gamepadBackButton);
+    var backInputDown = global.timeSinceLastInput >= global.inputCoolDownSeconds && (keyboard_check(global.backKey) || gamepad_button_check(global.gamepadSlot, global.gamepadBackButton));
+	
+	if (backInputDown)
+	{
+		global.timeSinceLastInput = 0;
+	}
+
+	return backInputDown;
 }
