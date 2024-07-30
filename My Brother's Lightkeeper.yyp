@@ -15,10 +15,10 @@
     {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Notes","folderPath":"folders/Notes.yy","name":"Notes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Region2","folderPath":"folders/Objects/Region2.yy","name":"Region2","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Map","folderPath":"folders/Objects/Map.yy","name":"Map","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"NPCs","folderPath":"folders/Objects/NPCs.yy","name":"NPCs","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Region1","folderPath":"folders/Objects/Region1.yy","name":"Region1","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Region2","folderPath":"folders/Objects/Region2.yy","name":"Region2","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Weather","folderPath":"folders/Objects/Weather.yy","name":"Weather","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -54,7 +54,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.1.152",
+    "IDEVersion":"2024.6.2.162",
   },
   "name":"My Brother's Lightkeeper",
   "resources":[
@@ -90,6 +90,7 @@
     {"id":{"name":"SoundMapPickup","path":"sounds/SoundMapPickup/SoundMapPickup.yy",},},
     {"id":{"name":"SoundTalking","path":"sounds/SoundTalking/SoundTalking.yy",},},
     {"id":{"name":"AngryNPC","path":"sprites/AngryNPC/AngryNPC.yy",},},
+    {"id":{"name":"BoatFINAL","path":"sprites/BoatFINAL/BoatFINAL.yy",},},
     {"id":{"name":"BoatTemp","path":"sprites/BoatTemp/BoatTemp.yy",},},
     {"id":{"name":"CheeryNPC","path":"sprites/CheeryNPC/CheeryNPC.yy",},},
     {"id":{"name":"DialogBoxSprite","path":"sprites/DialogBoxSprite/DialogBoxSprite.yy",},},
