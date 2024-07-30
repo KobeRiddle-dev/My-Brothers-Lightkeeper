@@ -53,7 +53,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.1.152",
+    "IDEVersion":"2024.6.2.162",
   },
   "name":"My Brother's Lightkeeper",
   "resources":[
@@ -90,6 +90,10 @@
     {"id":{"name":"Island0LowTide","path":"sprites/Island0LowTide/Island0LowTide.yy",},},
     {"id":{"name":"IslandTemp","path":"sprites/IslandTemp/IslandTemp.yy",},},
     {"id":{"name":"LightHouseDark","path":"sprites/LightHouseDark/LightHouseDark.yy",},},
+    {"id":{"name":"MainCharacterWalkingDown","path":"sprites/MainCharacterWalkingDown/MainCharacterWalkingDown.yy",},},
+    {"id":{"name":"MainCharacterWalkLeft","path":"sprites/MainCharacterWalkLeft/MainCharacterWalkLeft.yy",},},
+    {"id":{"name":"MainCharacterWalkRight","path":"sprites/MainCharacterWalkRight/MainCharacterWalkRight.yy",},},
+    {"id":{"name":"MainCharacterWalkUp","path":"sprites/MainCharacterWalkUp/MainCharacterWalkUp.yy",},},
     {"id":{"name":"MapPieceSprite","path":"sprites/MapPieceSprite/MapPieceSprite.yy",},},
     {"id":{"name":"PlayerTemp","path":"sprites/PlayerTemp/PlayerTemp.yy",},},
     {"id":{"name":"SeaBackgroundTemp","path":"sprites/SeaBackgroundTemp/SeaBackgroundTemp.yy",},},

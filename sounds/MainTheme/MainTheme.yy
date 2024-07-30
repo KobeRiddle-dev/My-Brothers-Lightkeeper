@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"MainTheme.wav",
   "type":1,
-  "volume":0.33,
+  "volume":0.74,
 }
