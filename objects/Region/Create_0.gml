@@ -118,7 +118,19 @@ CreateNpc = function(npcMood, phraseSet)
 	var npcX = randomIsland.GetRandomXWithin();
 	var npcY = randomIsland.GetRandomYWithin();
 
-	instance_create_layer(npcX, npcY, "NPCs", NPC, {mood: npcMood, phraseSet: phraseSet});
+	if (npcMood == "serious")
+	{
+		instance_create_layer(npcX, npcY, "NPCs", SeriousNPCObj, {mood: npcMood, phraseSet: phraseSet});
+	}
+	else if (npcMood == "cheery")
+	{
+		instance_create_layer(npcX, npcY, "NPCs", CheeryNPCObj, {mood: npcMood, phraseSet: phraseSet});
+	}
+	else if (npcMood == "angry")
+	{
+		instance_create_layer(npcX, npcY, "NPCs", AngryNPCObj, {mood: npcMood, phraseSet: phraseSet});
+	}
+
 }
 
 CreateNextRegion = function()
@@ -150,6 +162,7 @@ if (self.regionNumber == 1)
 }
 else if (self.regionNumber == 2)
 {
+	self.CreateNpc("serious", 1);
 	self.CreateNpc("cheery", 0);
 	self.CreateNpc("angry", 0);
 }
@@ -160,6 +173,7 @@ else if (self.regionNumber == 3)
 }
 else if (self.regionNumber == 4)
 {
+	self.CreateNpc("serious", 2);
 	self.CreateNpc("cheery", 2);
 	self.CreateNpc("angry", 2);
 }
