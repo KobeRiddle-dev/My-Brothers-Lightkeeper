@@ -53,16 +53,44 @@ DrawPhrase = function(phraseIndex)
 }
 
 /// @instancevar {Array<Array<String>>} phrasesNice1;
-self.phrasesNice = 
+self.phrasesSerious = 
 [
-    ["Hey you! What are you doing here?!", 
-    "This is my island. Who let you on here?", 
-    "Since you seem nice enough, even though you aren't answering me, I could put you to work.", "There's a tall tale about some mystical piece of paper in a bottle around these isles, do you know anything about it?"
-    ],
+    [
+        "Hey you! What are you doing here?!", 
+        "This is my island. Who let you on here?", 
+        "Since you seem nice enough, even though you aren't answering me, I could put you to work.", "There's a tall tale about some mystical piece of paper in a bottle around these isles, do you know anything about it?"
+    ]
 ];
 
-/// @instancevar {Array<String>} phrasesMean; 
-self.phrasesMean = ["Oh. It's you again. Go do whatever you need to do, I can't be bothered.", "I've already missed my 4 o' clock sitting session because of you, so I can't be bothered to talk to you anymore.", "Oh look, there hes goes, lighting up another lighthouse. Like we needed help with that anyway..."]
+/// @instancevar {Array<Array<String>>} phrasesAngry; 
+self.phrasesAngry = 
+[
+    [
+        "This storm has totally ruined my day of doing absolutely nothing. How am I supposed to brood in peace now?",
+        "Oh. Hi.",
+        "Who are you?",
+        "I don’t want to hear what you have to say.",
+        "Why are you just standing there...ominously...",
+        "Well, if you're not going to leave me alone, rumor has it there’s a magical piece of paper on one of these islands. I don't believe any of that voodoo hoodoo crap though. Never helped me. Never will.",
+        "Now, get out of my face before I go find a palm to hit you with." 
+    ],
+    [
+        "Oh. It’s you again. Go do whatever you need to do, I can’t be bothered.",
+        "I’ve already missed my 4 o’ clock sitting session because of you, so I can’t be bothered to talk to you anymore.",
+        "Oh look, there he goes, lighting up another lighthouse. Like we needed help with that anyway..."
+    ],
+    [
+        "What do you want.",
+        "...",
+        "You know, you actually aren’t half bad. I can actually go see my mom now...",
+        "Thanks kid."
+    ]
+];
+
+/// @instancevar {Array<Array<String>>} phrasesAngry; 
+self.phrasesCheery = 
+[
+];
 
 self.currentPhraseIndex = 0;
 
