@@ -28,11 +28,11 @@ CreateDialog = function()
     }
     else if (self.mood == "cheery")
     {
-        phrases = self.phrasesSerious[self.phraseSet];
+        phrases = self.phrasesCheery[self.phraseSet];
     }
     else if (self.mood == "angry")
     {
-        phrases = self.phrasesSerious[self.phraseSet];
+        phrases = self.phrasesAngry[self.phraseSet];
     }
 
     show_debug_message("mood: " + self.mood, + ", phrases: " + string(phrases));
@@ -90,5 +90,41 @@ self.phrasesAngry =
 /// @instancevar {Array<Array<String>>} phrasesAngry; 
 self.phrasesCheery = 
 [
+    [
+        "Hey Stranger! Come on over!",
+        "What brings you into town? I don’t recognize ya!",
+        "Hm..A quiet one huh?",
+        "Well, don’t worry about it! My uncle is the same way , so I’m totally used to it. Don’t stress about needing to say anything. I can go on for hours.",
+        "APPARENTLY, there’s this crazy legend about these bottles around town? I don’t know, I just use them to hold sand and gift them to strangers. People call me weird or crazy, but I think it’s a sweet gift. Lemme know if you find any!",
+        "See you around!"
+    ],
+    [
+        "Hey stranger! Good to see you again!",
+        "Any luck with those bottles? Actually, never mind you don’t have to answer that.",
+        "Anyways, listen to this. I sailed on over to the mainland in my time apart from you, and I heard about this crazy animal you might want to see! Check this out! *Reaches into his pocket*",
+        "*Pulls out Hermit Crab*",
+        "It’s a little crab! I’ve named him Fred. Fred doesn’t have a home yet, but I’m on the hunt for one.",
+        "I think one of those bottles would be perfect, but I can’t find any...Anyways, I’ll see you around"
+    ],
+    [
+        "Hey Friend!",
+        "I’m so glad I ran into you! I was wondering if you have any of those bottles laying around!",
+        "After you left, I saw you sailing around and figured you’ve picked up random things in your journeys! Any luck in finding any empty ones?",
+        "*You give him an empty bottle with a little left over sand and seaweed lodged inside...*",
+        "Thank you so much!!! Fred! You have a home!"
+    ]
 ];
+
+// if (self.mood == "serious")
+// {
+//     object_set_sprite(self.id, SeriousNPC);
+// }
+// else if (self.mood == "cheery")
+// {
+//     object_set_sprite(self.id, CheeryNPC);
+// }
+// else if (self.mood == "angry")
+// {
+//     object_set_sprite(self.id, AngryNPC);
+// }
 
