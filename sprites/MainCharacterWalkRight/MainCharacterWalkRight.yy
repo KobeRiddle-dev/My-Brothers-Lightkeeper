@@ -2,18 +2,18 @@
   "$GMSprite":"",
   "%Name":"MainCharacterWalkRight",
   "bboxMode":0,
-  "bbox_bottom":66,
-  "bbox_left":17,
-  "bbox_right":49,
-  "bbox_top":0,
+  "bbox_bottom":64,
+  "bbox_left":19,
+  "bbox_right":47,
+  "bbox_top":3,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7b016182-5224-449b-9a18-1d32f3a85ec7","name":"7b016182-5224-449b-9a18-1d32f3a85ec7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"f8b18b79-1910-4739-af19-e8f866ebebc9","name":"f8b18b79-1910-4739-af19-e8f866ebebc9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"7b016182-5224-449b-9a18-1d32f3a85ec7","name":"7b016182-5224-449b-9a18-1d32f3a85ec7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -70,11 +70,11 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7b016182-5224-449b-9a18-1d32f3a85ec7","path":"sprites/MainCharacterWalkRight/MainCharacterWalkRight.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"19c33323-097f-4143-bb07-9515dd11d3c6","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f8b18b79-1910-4739-af19-e8f866ebebc9","path":"sprites/MainCharacterWalkRight/MainCharacterWalkRight.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"f0954c15-ff81-44ca-9991-0bbb3ada6bf1","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"f0954c15-ff81-44ca-9991-0bbb3ada6bf1","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7b016182-5224-449b-9a18-1d32f3a85ec7","path":"sprites/MainCharacterWalkRight/MainCharacterWalkRight.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"19c33323-097f-4143-bb07-9515dd11d3c6","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
