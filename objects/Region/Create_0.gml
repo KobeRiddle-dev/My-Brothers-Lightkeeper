@@ -108,14 +108,36 @@ GetRandomIsland = function()
 	return self.islands[randomIndex];
 }
 
-CreateNpc = function()
+/// @description 
+/// @param {String} npcMood 
+CreateNpc = function(npcMood)
 {
 	var randomIsland = GetRandomIsland();
 	var npcX = randomIsland.GetRandomXWithin();
 	var npcY = randomIsland.GetRandomYWithin();
 
-	instance_create_layer(npcX, npcY, "NPCs", NPC);
+	instance_create_layer(npcX, npcY, "NPCs", NPC, {mood: npcMood});
 }
+
+CreateNextRegion = function()
+{
+	var nextRegionX = self.x + MetersToPixels(irandom_range(self.radiusMeters, self.radiusMeters * 2));
+	var nextRegionY = self.y + MetersToPixels(irandom_range(self.radiusMeters, self.radiusMeters * 2));
+	
+	var nextRegionNumber = self.regionNumber + 1;
+	var nextNumberSideIslands = self.numberSideIslands + 1;
+
+	show_debug_message("creating region at x: " + string(nextRegionX) + ", y: " + string(nextRegionY) + ", type: " + object_get_name(Region));
+	var nextRegionId = instance_create_layer(nextRegionX, nextRegionY, "Regions", Region, {regionNumber: nextRegionNumber, numberSideIslands: nextNumberSideIslands});
+
+	self.lightHouse.nextRegionId = nextRegionId;
+	
+	draw_triangle_color(self.x, self.y, nextRegionX - MetersToPixels(16), nextRegionY - MetersToPixels(16), nextRegionX + MetersToPixels(16), nextRegionY + MetersToPixels(16), c_yellow, c_yellow, c_yellow, false);
+
+	draw_line_width_color(self.x, self.y, nextRegionX, nextRegionY, MetersToPixels(1), c_yellow, c_yellow);
+}
+
+self.npcMoods = ["serious, cheery, angry"];
 
 self.radiusMeters = self.islandRadiusMeters * 8;
 self.fog = self.CreateFog();
@@ -123,4 +145,26 @@ self.CreateLightHouseIsland();
 self.lightHouse = CreateLightHouse(self.CreateStorm());
 self.CreateIslands();
 self.map = self.CreateMap();
-self.CreateNpc();
+
+if (self.regionNumber == 1)
+{
+	self.CreateNpc("serious");
+}
+
+if (self.regionNumber == 2)
+{
+	self.CreateNpc("cheery", 0);
+	self.CreateNpc("angry", 0);
+}
+
+if (self.regionNumber == 3)
+{
+	self.CreateNpc("cheery", 1);
+	self.CreateNpc("angry", 1);
+}
+
+if (self.regionNumber == 4)
+{
+	self.CreateNpc("cheery", 2);
+	self.CreateNpc("angry", 2);
+}

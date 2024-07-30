@@ -15,6 +15,7 @@
     {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Notes","folderPath":"folders/Notes.yy","name":"Notes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Region2","folderPath":"folders/Objects/Region2.yy","name":"Region2","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Map","folderPath":"folders/Objects/Map.yy","name":"Map","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"NPCs","folderPath":"folders/Objects/NPCs.yy","name":"NPCs","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Region1","folderPath":"folders/Objects/Region1.yy","name":"Region1","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -53,7 +54,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.2.162",
+    "IDEVersion":"2024.4.1.152",
   },
   "name":"My Brother's Lightkeeper",
   "resources":[
@@ -66,6 +67,10 @@
     {"id":{"name":"IslandR1I0","path":"objects/IslandR1I0/IslandR1I0.yy",},},
     {"id":{"name":"IslandR1I1","path":"objects/IslandR1I1/IslandR1I1.yy",},},
     {"id":{"name":"IslandR1I2","path":"objects/IslandR1I2/IslandR1I2.yy",},},
+    {"id":{"name":"IslandR2I0","path":"objects/IslandR2I0/IslandR2I0.yy",},},
+    {"id":{"name":"IslandR2I1","path":"objects/IslandR2I1/IslandR2I1.yy",},},
+    {"id":{"name":"IslandR2I2","path":"objects/IslandR2I2/IslandR2I2.yy",},},
+    {"id":{"name":"IslandR2I3","path":"objects/IslandR2I3/IslandR2I3.yy",},},
     {"id":{"name":"LightHouse","path":"objects/LightHouse/LightHouse.yy",},},
     {"id":{"name":"Map","path":"objects/Map/Map.yy",},},
     {"id":{"name":"MapPiece","path":"objects/MapPiece/MapPiece.yy",},},
