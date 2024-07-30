@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"IslandR2I0",
+  "%Name":"Island1",
   "eventList":[],
   "managed":true,
-  "name":"IslandR2I0",
+  "name":"Island1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Region2",
-    "path":"folders/Objects/Region2.yy",
+    "name":"Islands",
+    "path":"folders/Objects/Islands.yy",
   },
   "parentObjectId":{
     "name":"Island",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"IslandTemp",
-    "path":"sprites/IslandTemp/IslandTemp.yy",
+    "name":"Island0LowTide",
+    "path":"sprites/Island0LowTide/Island0LowTide.yy",
   },
   "spriteMaskId":null,
   "visible":true,

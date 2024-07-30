@@ -1,6 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+/// @instancevar {String} mood;
+
+
+/// @instancevar {Real} phraseSet; 
+
+
 Update = function()
 {
 }
@@ -14,7 +20,7 @@ CreateDialog = function()
 
     show_debug_message("Creating dialog at x:" + string(dialogBoxX) + " y: " + string(dialogBoxY));
 
-    var phrases = [];
+    var phrases = ["no mood set!"];
 
     if (self.mood == "serious")
     {
@@ -41,6 +47,18 @@ self.phrasesSerious =
         "Hey you! What are you doing here?!", 
         "This is my island. Who let you on here?", 
         "Since you seem nice enough, even though you aren't answering me, I could put you to work.", "There's a tall tale about some mystical piece of paper in a bottle around these isles, do you know anything about it?"
+    ],
+    [
+        "I saw what you did with the lighthouse! Good work! Kind of hurt you didn’t come to me first though with your findings on the magic. Maybe this time you could?",
+        "I found after some very thorough research and ethically questionable actions, that the maps are in fact connected to a very ancient warlock who used to live here. He was practicing some form of dark magic, it took a LOT of digging...literally.",
+        "Anyways...Next time you stumble upon one of those bottles, you let me know."
+    ],
+    [
+        "Hey you! Any luck with your search for the bottles? I still haven’t found any with my luck of the draw, but I’ll keep on tryin.",
+        "*You give him a bottle you found earlier with nonsense scribbled on it*",
+        "Wait...What’s this?",
+        "For me? ...You’re kidding...",    
+        "I CAN FINALLY DIE IN PEACE! THANK YOU! NOW TO USE THAT GRIMOIRE I’VE BEEN STUDYING!"
     ]
 ];
 
@@ -74,8 +92,3 @@ self.phrasesCheery =
 [
 ];
 
-/// @instancevar {String} 
-self.mood = "none";  
-
-/// @instancevar {Real} phraseSet; 
-self.phraseSet = 0;

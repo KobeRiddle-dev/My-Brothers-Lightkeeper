@@ -91,7 +91,8 @@ CreateIslands = function()
 		var yOffsetPixels = MetersToPixels((self.islandRadiusMeters * 2 * yFactors[i]) + randomOffsetYMeters);
 
 		// Get Island Name
-		var islandName = "Island" + "R" + string(self.regionNumber) + "I" + string(i);
+		var islandNumber = irandom_range(1, 3);
+		var islandName = "Island" + string(islandNumber);
 		// show_debug_message("islandName: " + islandName);
 		var islandType = asset_get_index(islandName);
 		// show_debug_message(object_get_name(islandType));
@@ -145,22 +146,19 @@ self.map = self.CreateMap();
 
 if (self.regionNumber == 1)
 {
-	self.CreateNpc("serious");
+	self.CreateNpc("serious", 0);
 }
-
-if (self.regionNumber == 2)
+else if (self.regionNumber == 2)
 {
 	self.CreateNpc("cheery", 0);
 	self.CreateNpc("angry", 0);
 }
-
-if (self.regionNumber == 3)
+else if (self.regionNumber == 3)
 {
 	self.CreateNpc("cheery", 1);
 	self.CreateNpc("angry", 1);
 }
-
-if (self.regionNumber == 4)
+else if (self.regionNumber == 4)
 {
 	self.CreateNpc("cheery", 2);
 	self.CreateNpc("angry", 2);
