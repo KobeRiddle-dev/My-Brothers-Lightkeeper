@@ -47,15 +47,14 @@ EndDialog = function()
 /// @param {Real} phraseIndex 
 DrawPhrase = function(phraseIndex)
 {
-    show_debug_message("Drawing text: " + self.phrases[phraseIndex]);
+    // show_debug_message("Drawing text: " + self.phrases[phraseIndex]);
     draw_set_font(DialogFont);
     draw_text_ext_color(self.x - (self.sprite_width / 2) + 32, self.y - (self.sprite_height / 2) + 32, self.phrases[phraseIndex], -1, self.sprite_width - 64, c_white, c_white, c_white, c_white, 1);
 }
 
 self.currentPhraseIndex = 0;
 
-self.DrawPhrase(0);
+// self.DrawPhrase(0);
 
 /// @instancevar {Array<String} phrases;  
-self.phrases = [];
 

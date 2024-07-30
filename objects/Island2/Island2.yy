@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"IslandR1I0",
+  "%Name":"Island2",
   "eventList":[],
   "managed":true,
-  "name":"IslandR1I0",
+  "name":"Island2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Region1",
-    "path":"folders/Objects/Region1.yy",
+    "name":"Islands",
+    "path":"folders/Objects/Islands.yy",
   },
   "parentObjectId":{
     "name":"Island",
