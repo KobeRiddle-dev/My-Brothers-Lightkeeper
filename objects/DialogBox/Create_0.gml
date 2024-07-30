@@ -21,7 +21,7 @@ Update = function()
 AdvanceDialog = function()
 {
     self.currentPhraseIndex++;
-    if (self.currentPhraseIndex >= array_length(self.phrases))
+    if (self.currentPhraseIndex >= array_length(self.phrasesNice1))
     {
         EndDialog();      
         return;
@@ -47,13 +47,22 @@ EndDialog = function()
 /// @param {Real} phraseIndex 
 DrawPhrase = function(phraseIndex)
 {
-    show_debug_message("Drawing text: " + self.phrases[phraseIndex]);
+    show_debug_message("Drawing text: " + self.phrasesNice1[phraseIndex]);
     draw_set_font(DialogFont);
-    draw_text_ext_color(self.x - (self.sprite_width / 2) + 32, self.y - (self.sprite_height / 2) + 32, self.phrases[phraseIndex], -1, self.sprite_width - 64, c_white, c_white, c_white, c_white, 1);
+    draw_text_ext_color(self.x - (self.sprite_width / 2) + 32, self.y - (self.sprite_height / 2) + 32, self.phrasesNice1[phraseIndex], -1, self.sprite_width - 64, c_white, c_white, c_white, c_white, 1);
 }
 
-/// @instancevar {Array<String>} phrases;
-self.phrases = ["Hey you! What are you doing here?!", "This is my island. Who let you on here?", "Since you seem nice enough, even though you aren’t answering me, I could put you to work.", "There's a tall tale about some mystical piece of paper in a bottle around these isles, do you know anything about it?"];
+/// @instancevar {Array<Array<String>>} phrasesNice1;
+self.phrasesNice = 
+[
+    ["Hey you! What are you doing here?!", 
+    "This is my island. Who let you on here?", 
+    "Since you seem nice enough, even though you aren't answering me, I could put you to work.", "There's a tall tale about some mystical piece of paper in a bottle around these isles, do you know anything about it?"
+    ],
+];
+
+/// @instancevar {Array<String>} phrasesMean; 
+self.phrasesMean = ["Oh. It's you again. Go do whatever you need to do, I can't be bothered.", "I've already missed my 4 o' clock sitting session because of you, so I can't be bothered to talk to you anymore.", "Oh look, there hes goes, lighting up another lighthouse. Like we needed help with that anyway..."]
 
 self.currentPhraseIndex = 0;
 

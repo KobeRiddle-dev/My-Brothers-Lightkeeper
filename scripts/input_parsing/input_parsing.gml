@@ -66,9 +66,9 @@ function GetHorizontalInput()
         horizontalInput -= 1;
     }
 
-    // var gamepadHorizontal = gamepad_axis_value(global.gamepadSlot, global.gamepadHorizontalAxis);
-    // if (gamepadHorizontal != 0)
-    //     horizontalInput = gamepadHorizontal;
+    var gamepadHorizontal = gamepad_axis_value(global.gamepadSlot, global.gamepadHorizontalAxis);
+    if (gamepadHorizontal != 0)
+        horizontalInput = gamepadHorizontal;
 
     // show_debug_message("horizontal input: " + string(horizontalInput));
 
