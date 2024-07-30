@@ -110,19 +110,20 @@ GetRandomIsland = function()
 
 /// @description 
 /// @param {String} npcMood 
-CreateNpc = function(npcMood)
+/// @param {Real} phraseSet 
+CreateNpc = function(npcMood, phraseSet)
 {
 	var randomIsland = GetRandomIsland();
 	var npcX = randomIsland.GetRandomXWithin();
 	var npcY = randomIsland.GetRandomYWithin();
 
-	instance_create_layer(npcX, npcY, "NPCs", NPC, {mood: npcMood});
+	instance_create_layer(npcX, npcY, "NPCs", NPC, {mood: npcMood, phraseSet: phraseSet});
 }
 
 CreateNextRegion = function()
 {
-	var nextRegionX = self.x + MetersToPixels(irandom_range(self.radiusMeters, self.radiusMeters * 2));
-	var nextRegionY = self.y + MetersToPixels(irandom_range(self.radiusMeters, self.radiusMeters * 2));
+	var nextRegionX = self.x + MetersToPixels(irandom_range(self.radiusMeters, self.radiusMeters * 1.5));
+	var nextRegionY = self.y - MetersToPixels(irandom_range(self.radiusMeters, self.radiusMeters * 1.5));
 	
 	var nextRegionNumber = self.regionNumber + 1;
 	var nextNumberSideIslands = self.numberSideIslands + 1;
@@ -131,10 +132,6 @@ CreateNextRegion = function()
 	var nextRegionId = instance_create_layer(nextRegionX, nextRegionY, "Regions", Region, {regionNumber: nextRegionNumber, numberSideIslands: nextNumberSideIslands});
 
 	self.lightHouse.nextRegionId = nextRegionId;
-	
-	draw_triangle_color(self.x, self.y, nextRegionX - MetersToPixels(16), nextRegionY - MetersToPixels(16), nextRegionX + MetersToPixels(16), nextRegionY + MetersToPixels(16), c_yellow, c_yellow, c_yellow, false);
-
-	draw_line_width_color(self.x, self.y, nextRegionX, nextRegionY, MetersToPixels(1), c_yellow, c_yellow);
 }
 
 self.npcMoods = ["serious, cheery, angry"];
