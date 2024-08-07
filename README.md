@@ -44,5 +44,10 @@ Gamepad/controller recommended.
 
 ## Authors
 
-- Kobe Riddle
-- Timothy Quin Richards
+- Kobe Riddle -- Engineering, Product Owner, Design, Environmental art
+- Timothy Quin Richards -- Design, Production, Sound, Environmental art
+
+## Attributions
+
+Clockwork Raven: Tile set and base sprite for the characters, which were drawn over for each character.\
+[https://www.patreon.com/clockworkravenstudios/posts](https://www.patreon.com/clockworkravenstudios/posts)
