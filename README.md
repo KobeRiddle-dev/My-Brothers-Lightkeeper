@@ -36,11 +36,11 @@ The game features some light procedural generation to make each play through a l
 
 Gamepad/controller recommended.
 
-| Gamepad (Xbox) | Keyboard | Action                          |
-| -------------- | -------- | ------------------------------- |
-| LS             | WASD     | Move                            |
-| X              | F        | Interact/Advance dialog (press) |
-| B              | X        | Back/Exit dialog (press)        |
+| Gamepad (Xbox buttons shown) | Keyboard | Action                          |
+| ---------------------------- | -------- | ------------------------------- |
+| LS                           | WASD     | Move                            |
+| X                            | F        | Interact/Advance dialog (press) |
+| B                            | X        | Back/Exit dialog (press)        |
 
 ## Authors
 
