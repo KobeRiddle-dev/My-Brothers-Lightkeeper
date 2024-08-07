@@ -91,7 +91,7 @@ function IsInteractInputDown()
     return interactInputDown;
 }
 
-global.inputCoolDownSeconds = 0.25;
+global.inputCoolDownSeconds = 0.1;
 global.timeSinceLastInput = 0;
 
 function IsBackInputDown()
