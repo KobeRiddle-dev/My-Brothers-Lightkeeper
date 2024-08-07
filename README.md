@@ -45,7 +45,7 @@ Gamepad/controller recommended.
 ## Authors
 
 - Kobe Riddle -- Engineering, Product Owner, Design, Environmental art
-- Timothy Quin Richards -- Design, Production, Sound, Environmental art
+- Timothy Quin Richards -- Game Design, UX Design, Narrative Design, Game Writer, Island Design, Production, Audio Design, Character art
 
 ## Attributions
 
