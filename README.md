@@ -25,7 +25,7 @@ The game features some light procedural generation to make each play through a l
 
 ![A screenshot featuring dialog](dialog.png)
 
-![A screenshot featuring a beam of light guiding the player to the next region.](image.png)
+![A screenshot featuring a beam of light guiding the player to the next region.](lightBeam.png)
 
 | Basic info | ---     |
 | ---------- | ------- |
