@@ -16,6 +16,22 @@ Let the lower lights be burning; Send a gleam across the wave.
 Some poor fainting, struggling seaman You may rescue, you may save.
 ```
 
+The player moves from region to region, talking to other seafarers, finding map fragments that unshroud the lighthouses, and lighting each lighthouse to get to the next region.\
+The game features some light procedural generation to make each play through a little bit different.
+
+## Screenshots
+
+![A screenshot featuring the player on an island, near a raft, near an island with a lighthouse that is shrouded in a cloud.](gameplay.png)
+
+![A screenshot featuring dialog](dialog.png)
+
+![A screenshot featuring a beam of light guiding the player to the next region.](image.png)
+
+| Basic info | ---     |
+| ---------- | ------- |
+| Platform   | Windows |
+| Players    | 1       |
+
 ## How To Play
 
 Gamepad/controller recommended.
