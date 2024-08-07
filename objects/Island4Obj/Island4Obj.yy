@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Island1",
+  "%Name":"Island4Obj",
   "eventList":[],
   "managed":true,
-  "name":"Island1",
+  "name":"Island4Obj",
   "overriddenProperties":[],
   "parent":{
     "name":"Islands",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Island0LowTide",
-    "path":"sprites/Island0LowTide/Island0LowTide.yy",
+    "name":"Island4",
+    "path":"sprites/Island4/Island4.yy",
   },
   "spriteMaskId":null,
   "visible":true,

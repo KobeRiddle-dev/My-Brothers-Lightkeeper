@@ -48,6 +48,11 @@ Update = function()
 	{
         Move(horizontalInput, verticalInput);
 	}
+
+	if (IsDebugPressed())
+	{
+		show_debug_message("Player Position: " + "x: " + string(self.x) + " y: " + string(self.y));
+	}
 }
 
 

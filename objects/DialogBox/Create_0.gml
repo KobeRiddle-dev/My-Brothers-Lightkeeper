@@ -21,7 +21,7 @@ Update = function()
 AdvanceDialog = function()
 {
     self.currentPhraseIndex++;
-    if (self.currentPhraseIndex >= array_length(self.phrases))
+    if (self.currentPhraseIndex >= array_length(self.phrases) || self.currentPhraseIndex < 0)
     {
         EndDialog();      
         return;
@@ -31,7 +31,7 @@ AdvanceDialog = function()
 RevertDialog = function()
 {
     self.currentPhraseIndex--;
-    if (self.currentPhraseIndex < 0)
+    if (self.currentPhraseIndex < 0 >= array_length(self.phrases))
     {
         EndDialog();
         return;

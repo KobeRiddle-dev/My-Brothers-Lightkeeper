@@ -66,12 +66,14 @@ CreateMap = function()
 
 CreateIslands = function()
 {
-	// reset the seed. Gamemaker is weird so you have to do that manually.
-	randomize();
-	
+
 	var xFactors = [-1, 0, 1, -1, 1, -1, 0, 1];
 	var yFactors = [-1, -1, -1, 0, 0, 1, 1, 1]
 
+	if (self.regionNumber == 4)
+	{
+		self.numberSideIslands = 1;
+	}
 	for (var i = 0; i < self.numberSideIslands; i++)
 	{
 		// Get island position
@@ -87,16 +89,21 @@ CreateIslands = function()
 		var randomOffsetXMeters = irandom_range(-randomOffsetMetersBound, randomOffsetMetersBound);
 		var randomOffsetYMeters = irandom_range(-randomOffsetMetersBound, randomOffsetMetersBound);
 
-		var xOffsetPixels = MetersToPixels((self.islandRadiusMeters * 2 * xFactors[i]) + randomOffsetXMeters);
-		var yOffsetPixels = MetersToPixels((self.islandRadiusMeters * 2 * yFactors[i]) + randomOffsetYMeters);
+		var xOffsetPixels = MetersToPixels((self.islandRadiusMeters * 2 * xFactor) + randomOffsetXMeters);
+		var yOffsetPixels = MetersToPixels((self.islandRadiusMeters * 2 * yFactor) + randomOffsetYMeters);
 
 		// Get Island Name
-		var islandNumber = irandom_range(1, 3);
-		var islandName = "Island" + string(islandNumber);
+		var islandNumber = irandom_range(1, 4);
+		var islandName = "Island" + string(islandNumber) + "Obj";
 		// show_debug_message("islandName: " + islandName);
 		var islandType = asset_get_index(islandName);
 		// show_debug_message(object_get_name(islandType));
 		
+		if (self.regionNumber == 4)
+		{
+			islandType = IslandFinalObj;
+		}
+
 		// Make Island
 		var newIsland = CreateIsland(xOffsetPixels, yOffsetPixels, islandType);
 		array_push(self.islands, newIsland);
@@ -149,12 +156,23 @@ CreateNextRegion = function()
 
 self.npcMoods = ["serious, cheery, angry"];
 
+var islandNumber = irandom_range(1, 4);
+var islandName = "Island" + string(islandNumber) + "Obj";
+var islandType = asset_get_index(islandName);
+self.lightHouseIslandType = islandType;
+
+
 self.radiusMeters = self.islandRadiusMeters * 8;
 self.fog = self.CreateFog();
-self.CreateLightHouseIsland();
-self.lightHouse = CreateLightHouse(self.CreateStorm());
+
 self.CreateIslands();
-self.map = self.CreateMap();
+if (self.regionNumber != 4)
+{
+	self.CreateLightHouseIsland();
+	self.lightHouse = CreateLightHouse(self.CreateStorm());
+	self.map = self.CreateMap();
+}
+
 
 if (self.regionNumber == 1)
 {

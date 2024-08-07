@@ -7,6 +7,7 @@ global.rightKey = ord("D");
 
 global.interactKey = ord("F");
 global.backKey = ord("X");
+global.debugKey = vk_space;
 
 global.gamepadSlot = 0;
 global.gamepadDeadzone = 0.1;
@@ -16,6 +17,7 @@ global.gamepadVerticalAxis = gp_axislv;
 
 global.gamepadInteractButton = gp_face3;
 global.gamepadBackButton = gp_face2;
+global.gamepadDebugButton = gp_select;
 
 /// @function
 /// @description Gets the vertical input
@@ -89,12 +91,24 @@ function IsInteractInputDown()
     return interactInputDown;
 }
 
-global.inputCoolDownSeconds = 0.1;
+global.inputCoolDownSeconds = 0.25;
 global.timeSinceLastInput = 0;
 
 function IsBackInputDown()
 {
     var backInputDown = global.timeSinceLastInput >= global.inputCoolDownSeconds && (keyboard_check(global.backKey) || gamepad_button_check(global.gamepadSlot, global.gamepadBackButton));
+	
+	if (backInputDown)
+	{
+		global.timeSinceLastInput = 0;
+	}
+
+	return backInputDown;
+}
+
+function IsDebugPressed()
+{
+    var backInputDown = global.timeSinceLastInput >= global.inputCoolDownSeconds && (keyboard_check(global.debugKey) || gamepad_button_check(global.gamepadSlot, global.gamepadDebugButton));
 	
 	if (backInputDown)
 	{
