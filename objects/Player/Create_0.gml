@@ -27,9 +27,6 @@ Move = function(horizontalInput, verticalInput)
 
 Update = function()
 {
-    global.timeSinceLastInput += convertMicroSecondsToSeconds(delta_time);
-	// show_debug_message("time since last input: " + string(global.timeSinceLastInput));
-
 	if (global.dialogMode)
 	{
 		return;

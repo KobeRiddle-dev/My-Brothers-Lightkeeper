@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"Island2",
   "bboxMode":0,
-  "bbox_bottom":1087,
+  "bbox_bottom":1023,
   "bbox_left":0,
   "bbox_right":1023,
   "bbox_top":32,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":1664,
+  "height":1024,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"ea6d0893-c205-4b9a-ae0c-3dd9bac67535","blendMode":0,"displayName":"default","isLocked":false,"name":"ea6d0893-c205-4b9a-ae0c-3dd9bac67535","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":1600,
+  "width":1024,
 }
